@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.color{
+    width: 350px;
+    height: 125px;
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+    margin-left: 17%;
+    margin-top: 5%;
+    animation-name: bacground_color;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: normal;
+}
+h3{
+    padding-top: 4%;
+}
+@keyframes bacground_color {
+    0%{ background-color: red; }
+    20%{background-color: aquamarine;}
+    40%{background-color: blueviolet;}
+    60%{background-color: rgb(83, 83, 190);}
+    80%{background-color: palevioletred;}
+    100%{background-color: bisque;}
+}
+.media1{
+    width: 80vw;
+    height: 60vh;
+    margin-left: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+@media (width : 400px )
+{
+    .media1{
+        background-color: brown;
+    }
+}
+@media (min-width : 300px) and ( max-width : 500px)
+{
+    .media1{
+        background-color: blueviolet;
+        color: bisque;
+    }
+}
+h3{
+    color: red;
+    font-weight: bold;
+}
+.pet{
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: space-evenly;
+}
+.dog{
+    height: 326px;
+    width: 327px;
+    text-align: center;
+    text-decoration: double;
+    border: 2px solid black;
+    border-radius: 22px;
+    margin-right: 70px;
+    margin-left: 135px;
+    
+}
+.cat{
+    height: 326px;
+    width: 327px;
+    text-align: center;
+    text-decoration: double;
+    border: 2px solid black;
+    border-radius: 22px;
+    margin-left: 135px;
+    
+}
+img{
+    height: 151px;
+    width: 310px;
+    border: 1px solid black;
+    border-radius: 19px;
+    margin-top: 3px;
+}
+@media (max-width : 412px)
+{
+    .pet{
+        flex-wrap: wrap;
+    }
+}
